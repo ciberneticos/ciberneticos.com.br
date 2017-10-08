@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Cibernéticos</title>
+    <link>https://www.ciberneticos.com.br/blog/</link>
+    <description>Recent content in Blogs on Cibernéticos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <copyright>Copyright (c) 2017, Cibernéticos; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 03 Sep 2017 13:02:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://www.ciberneticos.com.br/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lançamento do site</title>
+      <link>https://www.ciberneticos.com.br/blog/2017/09/03/lancamento-do-site/</link>
+      <pubDate>Sun, 03 Sep 2017 13:02:00 -0300</pubDate>
+      
+      <guid>https://www.ciberneticos.com.br/blog/2017/09/03/lancamento-do-site/</guid>
+      <description>Nosso site entra no ar! Sejam bem vindos ao nosso site.
+Em breve, todos os serviços que já comercializamos pelo Facebook, estarão disponíveis por aqui.
+Aguardem!</description>
+    </item>
+    
+  </channel>
+</rss>

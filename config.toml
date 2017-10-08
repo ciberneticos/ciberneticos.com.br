@@ -1,0 +1,80 @@
+baseurl = "https://www.ciberneticos.com.br/"
+defaultContentLanguage = "pt"
+disqusShortname = "ciberneticos"
+googleAnalytics = ""
+languageCode = "pt-br"
+paginate = 10
+publishDir = "docs"
+theme = "hugo-universal-theme"
+title = "Cibernéticos"
+[[menu.main]]
+name = "Contato"
+url = "/contact/"
+weight = 4
+[[menu.main]]
+identifier = "faq"
+name = "FAQ"
+url = "/faq/"
+weight = 3
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 2
+[[menu.main]]
+name = "Principal"
+url = "/"
+weight = 1
+[[menu.topbar]]
+name = "Email"
+pre = "<i class='fa fa-2x fa-envelope'></i>"
+url = "mailto:contato@ciberneticos.com.br"
+weight = 4
+[[menu.topbar]]
+name = "Facebook"
+pre = "<i class='fa fa-2x fa-facebook'></i>"
+url = "https://fb.com/ciberneticos"
+weight = 2
+[params]
+about_us = "<p>O site de compra e venda de itens, premium time, coins e gold do Tibia com a entrega mais rápida!</p>"
+author = "Cibernéticos"
+copyright = "Copyright (c) 2017, Cibernéticos; all rights reserved."
+date_format = "02/01/2006 15:04"
+defaultdescription = "Compra/venda de itens, premium time, coins e gold do jogo Tibia"
+defaultkeywords = ["tibia", "ciberneticos", "gold"]
+email = "contato@ciberneticos.com.br"
+googlemapsapikey = ""
+logo = "img/logo.png"
+style = "default"
+viewmorepostlink = "/blog/"
+[params.carousel]
+enable = true
+[params.clients]
+enable = true
+subtitle = ""
+title = "Parceiros"
+[params.features]
+enable = true
+[params.recent_posts]
+enable = true
+subtitle = "Fique por dentro do mundo do Tibia. As principais notícias, sem enrolação, sem firula!"
+title = "Últimas notícias"
+[params.see_more]
+enable = true
+icon = "fa fa-file-code-o"
+link_text = "Comprar agora"
+link_url = "#"
+subtitle = "Nós entregamos rápido. Não fique pensando muito... Você já demorou mais tempo para comprar do que nós para entregar!"
+title = "O que você está esperando?"
+[params.testimonials]
+enable = true
+subtitle = "Já atendemos centenas de cliente. Veja o que alguns deles tem a falar a respeito do nosso trabalho."
+title = "Testemunhos"
+[params.topbar]
+enable = true
+text = "<p class=\"hidden-sm hidden-xs\">Contate-nos: <a href=\"mailto:contato@ciberneticos.com.br\"><span style=\"color:white;\">contato@ciberneticos.com.br</span></a></p>\n      <p class=\"hidden-md hidden-lg\"><a href=\"mailto:contato@ciberneticos.com.br\" data-animate-hover=\"pulse\"><i class=\"fa fa-envelope\"></i></a>\n      </p>\n      "
+[params.widgets]
+categories = true
+search = true
+tags = true
+[permalinks]
+blog = "/blog/:year/:month/:day/:filename/"

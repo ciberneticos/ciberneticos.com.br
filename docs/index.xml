@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cibernéticos</title>
+    <link>https://www.ciberneticos.com.br/</link>
+    <description>Recent content on Cibernéticos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <copyright>Copyright (c) 2017, Cibernéticos; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 03 Sep 2017 13:02:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://www.ciberneticos.com.br/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lançamento do site</title>
+      <link>https://www.ciberneticos.com.br/blog/2017/09/03/lancamento-do-site/</link>
+      <pubDate>Sun, 03 Sep 2017 13:02:00 -0300</pubDate>
+      
+      <guid>https://www.ciberneticos.com.br/blog/2017/09/03/lancamento-do-site/</guid>
+      <description>Nosso site entra no ar! Sejam bem vindos ao nosso site.
+Em breve, todos os serviços que já comercializamos pelo Facebook, estarão disponíveis por aqui.
+Aguardem!</description>
+    </item>
+    
+    <item>
+      <title>Contato</title>
+      <link>https://www.ciberneticos.com.br/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ciberneticos.com.br/contact/</guid>
+      <description>Estamos aqui para te ajudar Você tem alguma dúvida? Está tendo algum problema para contratar nossos serviços?
+Por favor, sinta-se à vontade para entrar em contato com nossa equipe.
+Envie o formulário e responderemos por e-mail assim que possível.</description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://www.ciberneticos.com.br/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ciberneticos.com.br/faq/</guid>
+      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</description>
+    </item>
+    
+  </channel>
+</rss>

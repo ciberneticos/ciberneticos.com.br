@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.ciberneticos.com.br/blog/2017/09/03/lancamento-do-site/</loc>
+    <lastmod>2017-09-03T13:02:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.ciberneticos.com.br/blog/</loc>
+    <lastmod>2017-09-03T13:02:00-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ciberneticos.com.br/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ciberneticos.com.br/</loc>
+    <lastmod>2017-09-03T13:02:00-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ciberneticos.com.br/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.ciberneticos.com.br/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.ciberneticos.com.br/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
