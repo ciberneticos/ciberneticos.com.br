@@ -50,12 +50,19 @@
                                           {{ end }}
 
                                         </p>
-                                        <p class="date-comments">
-                                            <a href="{{ .Permalink }}"><i class="fa fa-calendar-o"></i> {{ .Date.Format .Site.Params.date_format }}</a>
-                                        </p>
                                     </div>
+                                    <p style="font-size:2em">R$ {{ .Params.price }}</p>
+                                    <form name="_xclick" target="paypal" action="https://www.paypal.com" method="post">
+                                        <input type="hidden" name="cmd" value="_cart">
+                                        <input type="hidden" name="business" value="{{ .Site.Params.paypal.email }}">
+                                        <input type="hidden" name="currency_code" value="{{ .Site.Params.paypal.currency }}">
+                                        <input type="hidden" name="item_name" value="{{ .Title }}">
+                                        <input type="hidden" name="amount" value="{{ .Params.price }}">
+                                        <input type="image" src="/img/comprar.png" border="0" width="200px" name="submit" alt="Comprar {{ .Title }} com PayPal!">
+                                        <input type="hidden" name="add" value="1">
+                                    </form>
                                     <p class="intro">{{ .Summary }}</p>
-                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">Ver detalhes</a>
                                     </p>
                                 </div>
                             </div>
