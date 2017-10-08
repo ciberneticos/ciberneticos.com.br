@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "breadcrumbs.html" . }}
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- *** LEFT COLUMN *** -->
+
+                    <div class="col-md-9" id="blog-post">
+
+                            <section class="post">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                      <div class="image">
+                                          <a href="{{ .Permalink }}">
+                                              {{ if .Params.banner }}
+                                              <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="">
+                                              {{ else }}
+                                              <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
+                                              {{ end }}
+                                          </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h2 style="margin-top:0px">{{ .Title }}</h2>
+                                        <div class="clearfix">
+                                            <p class="author-category">
+                                              {{ if isset .Params "author" }}
+                                              {{ i18n "authorBy" }} <a href="#">{{ .Params.author }}</a>
+                                              {{ end }}
+                                              {{ if isset .Params "categories" }}
+                                              {{ if gt (len .Params.categories) 0 }}
+                                              in <a href="{{ $.Site.BaseURL }}categories/{{ index .Params.categories 0 | urlize | lower }}">{{ index .Params.categories 0 }}</a>
+                                              {{ end }}
+                                              {{ end }}
+                                            </p>
+                                        </div>
+                                        <p style="font-size:1.5em">{{ if isset .Params.paypal "from" }}A partir de {{ .Site.Params.paypal.currencysymbol }}{{ .Params.paypal.from }}{{ else }}{{ .Site.Params.paypal.currencysymbol }}{{ .Params.paypal.price }}{{ end }}</p>
+                                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="{{ .Site.Params.paypal.email }}">
+<input type="hidden" name="lc" value="BR">
+<input type="hidden" name="item_name" value="{{ .Title }}">
+<input type="hidden" name="item_number" value="{{ .Params.paypal.id }}">
+<input type="hidden" name="button_subtype" value="products">
+<input type="hidden" name="no_note" value="1">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="return" value="{{.Site.BaseURL}}{{.Site.Params.paypal.return}}">
+<input type="hidden" name="cancel_return" value="{{.Site.BaseURL}}{{.Site.Params.paypal.cancel}}">
+<input type="hidden" name="rm" value="1">
+<input type="hidden" name="add" value="1">
+{{ if isset .Params.paypal "price" }}
+<input type="hidden" name="amount" value="{{ .Params.paypal.price }}">
+{{ end }}
+<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+<table>
+{{ if isset .Params.paypal "from" }}
+<tr><td style="padding:5px 10px"><input type="hidden" name="on0" value="{{ .Params.paypal.variation }}">{{ .Params.paypal.variation }}</td><td><select name="os0">
+        {{ range .Params.paypal.options }}
+	<option value="{{ .title }}">{{ .title }}: {{ $.Site.Params.paypal.currencysymbol }}{{ .price }}</option>
+        {{ end }}
+</select> </td></tr>
+{{ end }}
+{{ if isset .Params.paypal "fields" }}
+{{ range .Params.paypal.fields }}
+<tr><td style="padding:15px 10px"><input type="hidden" name="on{{ .id }}" value="{{ .name }}">{{ .name }}</td><td><input type="text" name="os{{ .id }}" maxlength="200"></td></tr>
+{{ end }}
+{{ end }}
+</table>
+<input type="hidden" name="currency_code" value="{{ .Site.Params.paypal.currencycode }}">
+{{ if isset .Params.paypal "from" }}
+{{ range .Params.paypal.options }}
+<input type="hidden" name="option_select{{ .id }}" value="{{ .title }}">
+<input type="hidden" name="option_amount{{ .id }}" value="{{ .price }}">
+{{ end }}
+<input type="hidden" name="option_index" value="0">
+{{ end }}
+<input type="image" src="https://www.paypalobjects.com/pt_BR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="Comprar {{ .Title }} agora!">
+<img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+</form>
+                                        <p class="intro">{{ .Summary }}</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        <!-- /#post-content -->
+                        {{ if .Site.DisqusShortname }}
+                        <div id="comments">
+                            {{ template "_internal/disqus.html" . }}
+                        </div>
+                        {{ end }}
+
+                    </div>
+                    <!-- /#blog-post -->
+
+                    <!-- *** LEFT COLUMN END *** -->
+
+                    <!-- *** RIGHT COLUMN *** -->
+
+                    <div class="col-md-3">
+
+                        <!-- *** MENUS AND WIDGETS *** -->
+
+                        {{ partial "sidebar.html" . }}
+
+                        <!-- *** MENUS AND FILTERS END *** -->
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <!-- *** RIGHT COLUMN END *** -->
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

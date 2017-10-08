@@ -52,7 +52,10 @@ style = "default"
 viewmorepostlink = "/blog/"
 [params.paypal]
 email = "renatofrota@gmail.com"
-currency = "BRL"
+currencycode = "BRL"
+currencysymbol = "R$ "
+return = "pedido-enviado"
+cancel = "pedido-cancelado"
 [params.carousel]
 enable = true
 [params.clients]
