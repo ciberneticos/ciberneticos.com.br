@@ -27,7 +27,7 @@ weight = 1
 [[menu.topbar]]
 name = "Email"
 pre = "<i class='fa fa-2x fa-envelope'></i>"
-url = "mailto:contato@ciberneticos.com.br"
+url = "mailto:ciberneticos.com.br@gmail.com"
 weight = 4
 [[menu.topbar]]
 name = "Facebook"
@@ -71,7 +71,7 @@ subtitle = "Já atendemos centenas de cliente. Veja o que alguns deles tem a fal
 title = "Testemunhos"
 [params.topbar]
 enable = true
-text = "<p class=\"hidden-sm hidden-xs\">Contate-nos: <a href=\"mailto:contato@ciberneticos.com.br\"><span style=\"color:white;\">contato@ciberneticos.com.br</span></a></p>\n      <p class=\"hidden-md hidden-lg\"><a href=\"mailto:contato@ciberneticos.com.br\" data-animate-hover=\"pulse\"><i class=\"fa fa-envelope\"></i></a>\n      </p>\n      "
+text = "<p class=\"hidden-sm hidden-xs\">Contate-nos: <a href=\"mailto:ciberneticos.com.br@gmail.com\"><span style=\"color:white;\">ciberneticos.com.br@gmail.com</span></a></p>\n      <p class=\"hidden-md hidden-lg\"><a href=\"mailto:ciberneticos.com.br@gmail.com\" data-animate-hover=\"pulse\"><i class=\"fa fa-envelope\"></i></a>\n      </p>\n      "
 [params.widgets]
 categories = true
 search = true
