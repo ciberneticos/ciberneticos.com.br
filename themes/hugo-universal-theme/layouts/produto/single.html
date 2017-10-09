@@ -38,7 +38,7 @@
                                       </div>
                                     </div>
                                     <div class="col-md-8">
-                                        <h2 style="margin-top:0px">{{ .Title }}</h2>
+                                        <h2 style="margin:0px">{{ .Title }}</h2>
                                         <div class="clearfix">
                                             <p class="author-category">
                                               {{ if isset .Params "author" }}
@@ -71,7 +71,7 @@
 <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
 <table>
 {{ if isset .Params.paypal "from" }}
-<tr><td style="padding:5px 10px"><input type="hidden" name="on0" value="{{ .Params.paypal.variation }}">{{ .Params.paypal.variation }}:</td><td><select name="os0">
+<tr><td style="padding:10px 10px 10px 0px"><input type="hidden" name="on0" value="{{ .Params.paypal.variation }}">{{ .Params.paypal.variation }}:</td><td><select name="os0">
         {{ range .Params.paypal.options }}
 	<option value="{{ .title }}">{{ .title }}: {{ $.Site.Params.paypal.currencysymbol }}{{ .price }}</option>
         {{ end }}
@@ -79,7 +79,7 @@
 {{ end }}
 {{ if isset .Params.paypal "fields" }}
 {{ range .Params.paypal.fields }}
-<tr><td style="padding:15px 10px"><input type="hidden" name="on{{ .id }}" value="{{ .name }}">{{ .name }}:</td><td><input type="text" name="os{{ .id }}" maxlength="200"></td></tr>
+<tr><td style="padding:10px 10px 10px 0px"><input type="hidden" name="on{{ .id }}" value="{{ .name }}">{{ .name }}:</td><td><input type="text" name="os{{ .id }}" maxlength="200"></td></tr>
 {{ end }}
 {{ end }}
 </table>
@@ -91,7 +91,7 @@
 {{ end }}
 <input type="hidden" name="option_index" value="0">
 {{ end }}
-<input type="image" src="https://www.paypalobjects.com/pt_BR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="Comprar {{ .Title }} agora!">
+<input style="padding-top:10px" type="image" src="https://www.paypalobjects.com/pt_BR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="Comprar {{ .Title }} agora!">
 <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
 </form>
                                         <p class="intro">{{ .Summary }}</p>
