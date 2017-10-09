@@ -66,18 +66,18 @@ title = "Parceiros"
 enable = true
 [params.recent_posts]
 enable = true
-subtitle = "Fique por dentro do mundo do Tibia. As principais notícias, sem enrolação, sem firula!"
+subtitle = "Fique por dentro das novidades do nosso site!"
 title = "Últimas notícias"
 [params.see_more]
 enable = true
 icon = "fa fa-file-code-o"
 link_text = "Comprar agora"
 link_url = "#"
-subtitle = "Nós entregamos rápido. Não fique pensando muito... Você já demorou mais tempo para comprar do que nós para entregar!"
+subtitle = "Nós entregamos mais rápido do que o tempo que você levou pra ler até aqui!"
 title = "O que você está esperando?"
 [params.testimonials]
 enable = true
-subtitle = "Já atendemos centenas de cliente. Veja o que alguns deles tem a falar a respeito do nosso trabalho."
+subtitle = "Veja o que alguns de nossos clientes dizem a respeito do nosso trabalho."
 title = "Testemunhos"
 [params.topbar]
 enable = true

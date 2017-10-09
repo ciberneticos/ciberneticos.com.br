@@ -9,7 +9,7 @@ title = "Tibia coins"
 [paypal]
 id = "1"
 from = "249.99"
-variation = "Quantidade:"
+variation = "Quantidade"
 
 [[paypal.options]]
 id = 1
@@ -23,5 +23,5 @@ price = "449.99"
 
 [[paypal.fields]]
 id = "1"
-name = "Nome do char:"
+name = "Nome do char"
 +++

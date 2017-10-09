@@ -71,7 +71,7 @@
 <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
 <table>
 {{ if isset .Params.paypal "from" }}
-<tr><td style="padding:5px 10px"><input type="hidden" name="on0" value="{{ .Params.paypal.variation }}">{{ .Params.paypal.variation }}</td><td><select name="os0">
+<tr><td style="padding:5px 10px"><input type="hidden" name="on0" value="{{ .Params.paypal.variation }}">{{ .Params.paypal.variation }}:</td><td><select name="os0">
         {{ range .Params.paypal.options }}
 	<option value="{{ .title }}">{{ .title }}: {{ $.Site.Params.paypal.currencysymbol }}{{ .price }}</option>
         {{ end }}
@@ -79,7 +79,7 @@
 {{ end }}
 {{ if isset .Params.paypal "fields" }}
 {{ range .Params.paypal.fields }}
-<tr><td style="padding:15px 10px"><input type="hidden" name="on{{ .id }}" value="{{ .name }}">{{ .name }}</td><td><input type="text" name="os{{ .id }}" maxlength="200"></td></tr>
+<tr><td style="padding:15px 10px"><input type="hidden" name="on{{ .id }}" value="{{ .name }}">{{ .name }}:</td><td><input type="text" name="os{{ .id }}" maxlength="200"></td></tr>
 {{ end }}
 {{ end }}
 </table>
